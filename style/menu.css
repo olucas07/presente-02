@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+
+
+.btn{
+    padding: 20px;
+    width: 300px;
+    font-size: 25px;
+    background-color: initial;
+}
+
+
+
+i{
+    color: red;
+    animation: beat .8s infinite;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@keyframes beat{
+    0%, 40%, 100% {transform: scale(1) ;}
+    25%, 60% {transform: scale(1.1);}
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+#segredo{
+    border: 3px red solid;
+    color: red;
+    opacity: 0.5;
+}
+
+#cartinha{
+    border: 3px pink solid;
+    color: red;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#galeria{
+    border: 3px pink solid;
+    color: red;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#galeria:hover{
+    background-color: pink;
+    color: white;
+    transition: 0.3s;
+}
+
+#cartinha:hover{
+    color: white;
+    background-color: pink;
+    transition: 0.3s;
+}
